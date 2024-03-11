@@ -1,4 +1,4 @@
-# `tinykeys`
+# `@implydata/tinykeys`
 
 > A tiny (~400 B) & modern library for keybindings.
 > [See Demo](https://jamiebuilds.github.io/tinykeys/)
@@ -6,7 +6,7 @@
 ## Install
 
 ```sh
-npm install --save tinykeys
+npm install --save @implydata/tinykeys
 ```
 
 Or for a CDN version, you can use it on [unpkg.com](https://unpkg.com/tinykeys)
@@ -14,7 +14,7 @@ Or for a CDN version, you can use it on [unpkg.com](https://unpkg.com/tinykeys)
 ## Usage
 
 ```js
-import { tinykeys } from "tinykeys" // Or `window.tinykeys` using the CDN version
+import { tinykeys } from "@implydata/tinykeys" // Or `window.tinykeys` using the CDN version
 
 tinykeys(window, {
   "Shift+D": () => {
@@ -34,7 +34,7 @@ Alternatively, if you want to only create the keybinding handler, and register
 it as an event listener yourself:
 
 ```js
-import { createKeybindingsHandler } from "tinykeys"
+import { createKeybindingsHandler } from "@implydata/tinykeys"
 
 let handler = createKeybindingsHandler({
   "Shift+D": () => {
@@ -59,7 +59,7 @@ returned `unsubscribe()` function.
 
 ```js
 import { useEffect } from "react"
-import { tinykeys } from "tinykeys"
+import { tinykeys } from "@implydata/tinykeys"
 
 function useKeyboardShortcuts() {
   useEffect(() => {
